@@ -1,0 +1,14 @@
+spring:
+  main:
+    banner-mode: off
+graphql:
+  packages:
+    - "com.xcq1.kat.graphql"
+kat:
+  github:
+    username: "" # Your github user name
+    accesstoken: "" # Settings > Developer Settings > Personal access tokens, select 'repo' and 'admin:org'; highly recommended to set as an environment variable
+    filter:
+      org: "" # name of the organization to scan
+      unarchived: true # if should ignore archived repositories, set to true
+      name-regexp: ".*" # repository name must match the regexp
